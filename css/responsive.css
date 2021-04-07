@@ -76,7 +76,7 @@
     }
 
     .mobile-navbar {
-        height: 100vh;
+        height: 100%;
         background-color: hsl(229deg 31% 21% / 88%);
         animation: popSlideDown .8s ease-in-out;
     }
