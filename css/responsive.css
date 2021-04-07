@@ -1,0 +1,268 @@
+@media (min-width: 1441px) {  
+    .container {
+        max-width: 1300px;
+    }
+
+}
+
+@media (max-width: 1200px) {  
+    .container {
+        max-width: 960px;
+    }
+
+    :root {
+        font-size: 9px;
+    }
+
+    /* Header */
+    /* Features */
+    .header-image,
+    .features-image {
+        transform: translateX(0);
+        width: 100%;
+    }
+
+    .header-image img,
+    .features-image img {
+        width: 100%;
+    }
+
+    /* Features */
+    .features-description {
+        margin-left: 50px;
+    }
+
+    .features-tab p {
+        min-width: 400px;
+        margin: 30px 0;
+    }
+}
+
+@media (max-width: 992px) { 
+    .container {
+        max-width: 720px;
+    }
+
+    :root {
+        font-size: 8px;
+    }
+
+    /* GENERAL >> CLASSES >> SECTION TITLE */
+    .section-title {
+        margin-bottom: 40px;
+    }
+
+    .section-title p {
+        padding: 0 10px;
+    }
+
+    /* Navbar */
+
+    body.scroll-off {
+        overflow: hidden;
+    }
+
+    .nav-links-list {
+        display: none !important;
+    }
+
+    .hamburger-btn {
+        background-image: url('../images/icon-hamburger.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    .mobile-navbar {
+        height: 100vh;
+        background-color: hsl(229deg 31% 21% / 88%);
+        animation: popSlideDown .8s ease-in-out;
+    }
+
+    .mobile-navbar .nav-content .logo-bookmark {
+        background-image: url('../images/logo-bookmark-white.svg');
+    }
+
+    .mobile-navbar .nav-links-list {
+        position: absolute;
+        top: 129px;
+        left: 50%;
+        transform: translateX(-50%);
+        flex-direction: column;
+        display: flex !important;
+        width: 100%;
+        text-align: center;
+        padding: 0 15px;
+    }
+
+    .mobile-navbar .nav-links-list li {
+        margin: 0 !important;
+        width: 100%;
+        border-top: 1px solid var(--grayish-blue);
+        padding: 22px 0;
+    }
+    
+    .mobile-navbar .nav-links-list li a {
+        color: var(--white);
+        font-size: 1.8rem ;
+        box-shadow: none;
+    }
+
+    .mobile-navbar .hamburger-btn {
+        background-image: url('../images/icon-close.svg');
+    }
+
+    .mobile-navbar .btn-red {
+        background: none !important;
+        color: var(--white);
+        border: 2px solid var(--white);
+    }
+
+    .nav-social-links {
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-width: 90px;
+    }
+
+    /* Header */
+    .header-content {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .header-description h1,
+    .features-tab h1,
+    .header-description p,
+    .features-tab p {
+        max-width: 100%;
+        min-width: 100%;
+    }
+
+    /* Features */
+    .tab-btns,
+    .features-tab {
+        flex-direction: column;
+    }
+
+    .tab-btns {
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .tab-btns li {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .tab-btns li::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background-color: var(--grayish-blue);
+        width: 100%;
+        height: 1px;
+    }
+
+    .features-description {
+        margin: 0;
+        margin-top: 30px;
+    }
+
+    /* Download extension */
+    .download-extension-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+
+    .download-extension-content .card:nth-child(3) {
+        transform: translateY(0);
+    }
+
+    /* Frequently Asked Questions */
+    .asked-questions-content {
+        width: 80%;
+    }
+
+    /* Footer */
+    footer .contact-us-content {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 768px) {  
+    .container {
+        max-width: 540px;
+    }
+
+    /* Download extension */
+    .download-extension-content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .download-extension-content .card {
+        transform: translateY(0) !important;
+    }
+
+    /* Footer */
+    footer .footer-links {
+        padding: 60px 0;
+    }
+
+    footer .footer-links-content,
+    footer .contact-us-content form,
+    footer .footer-links-list {
+        flex-direction: column;
+    }
+
+    footer .contact-us-content form {
+        width: 100%;
+        height: 100px;
+        
+    }
+
+    footer .contact-us-content form * {
+        width: 100% !important;
+    }
+
+    footer .contact-us-content form button{
+        margin-top: 10px;
+    }
+
+    footer .footer-links-content a.logo-bookmark {
+        margin-bottom: 20px;
+    }
+
+    footer .footer-links-list {
+        margin-bottom: 40px;
+        font-size: 2.2rem;
+        line-height: 3;
+    }
+}
+
+@media (max-width: 576px) {  
+    .container {
+        max-width: none;
+    }
+    /* Header */
+    .header-buttons button {
+        width: 120px;
+    }
+    /* Frequently Asked Questions */
+    .asked-questions-content {
+        width: 95%;
+    }
+
+    .asked-questions-content a.btn {
+        margin: 30px auto 0;
+    }
+} 

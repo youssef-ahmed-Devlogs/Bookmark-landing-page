@@ -5,13 +5,244 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Bookmark landing page</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
 
-  <h1>Hello Project</h1>
+  <!-- Navbar -->
+  <nav>
+    <div class="container">
+      <div class="nav-content">
+        <a href="index.html" class="logo-bookmark"></a>
 
+        <ul class="nav-links-list">
+          <li><a href="#"> Features </a></li>
+          <li><a href="#"> Pricing </a></li>
+          <li><a href="#"> Contact </a></li>
+          <li><a href="#" class="login btn btn-red"> Login </a></li>
+        </ul>
+
+        <button class="hamburger-btn"></button>
+
+        <ul class="nav-social-links">
+          <li><a href="#"><img src="images/icon-facebook.svg" alt="icon-facebook"></a></li>
+          <li><a href="#"><img src="images/icon-twitter.svg" alt="icon-twitter"></a></li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="pd-y">
+    <div class="container">
+      <div class="header-content">
+        <div class="header-description">
+          <h1>A Simple Bookmark Manager</h1>
+          <p>
+            A clean and simple interface to organize your favourite websites. Open a new 
+            browser tab and see your sites load instantly. Try it for free.
+          </p>
+          <div class="header-buttons">
+            <button class="get-chrome btn btn-blue">Get it on Chrome</button>
+            <button class="get-firefox btn btn-light">Get it on Firefox</button>
+          </div>
+        </div>
+        <div class="header-image">
+          <img src="images/illustration-hero.svg" alt="illustration-hero">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Features -->
+  <section class="features pd-y">
+    <div class="section-title">
+      <h2>Features</h2>
+      <p>
+        Our aim is to make it quick and easy for you to access your favourite websites. 
+        Your bookmarks sync between your devices so you can access them on the go.
+      </p>
+    </div>
+    <div class="container">
+      <div class="features-content">
+        <ul class="tab-btns">
+          <li id="features-tab1" class="active">Simple Bookmarking</li>
+          <li id="features-tab2">Speedy Searching</li>
+          <li id="features-tab3">Easy Sharing</li>
+        </ul>
+        <div class="features-contetn-tabs">
+          <div class="features-tab1">
+            <div class="features-tab">
+              <div class="features-image">
+                <img src="images/illustration-features-tab-1.svg" alt="illustration-features-tab-1">
+              </div>
+              <div class="features-description">
+                <h1>Bookmark in one click</h1>
+                <p>
+                  Organize your bookmarks however you like. Our simple drag-and-drop interface 
+                  gives you complete control over how you manage your favourite sites.
+                </p>
+                <button class="features-more-btn btn btn-blue">More Info</button>
+              </div>
+            </div>
+          </div>
+          <div class="features-tab2">
+            <div class="features-tab">
+              <div class="features-image">
+                <img src="images/illustration-features-tab-1.svg" alt="illustration-features-tab-1">
+              </div>
+              <div class="features-description">
+                <h1>Intelligent search</h1>
+                <p>
+                  Our powerful search feature will help you find saved sites in no time at all. 
+                  No need to trawl through all of your bookmarks.
+                </p>
+                <button class="features-more-btn btn btn-blue">More Info</button>
+              </div>
+            </div>
+          </div>
+          <div class="features-tab features-tab3">
+            <div class="features-tab">
+              <div class="features-image">
+                <img src="images/illustration-features-tab-1.svg" alt="illustration-features-tab-1">
+              </div>
+              <div class="features-description">
+                <h1>Share your bookmarks</h1>
+                <p>
+                  Easily share your bookmarks and collections with others. Create a shareable 
+                  link that you can send at the click of a button.
+                </p>
+                <button class="features-more-btn btn btn-blue">More Info</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download extension -->
+  <section class="download-extension pd-y">
+    <div class="section-title">
+      <h2>Download the extension</h2>
+      <p>
+        We’ve got more browsers in the pipeline. Please do let us know if you’ve 
+        got a favourite you’d like us to prioritize.
+      </p>
+    </div>
+    <div class="container">
+      <div class="download-extension-content">
+        <div class="card">
+          <img class="browser-logo" src="images/logo-chrome.svg" alt="logo-chrome">
+          <h3>Add to Chrome</h3>
+          <p>Minimum version 62</p>
+          <img class="dots-logo" src="images/bg-dots.svg" alt="bg-dots">
+          <a href="#" class="btn btn-blue">Add & Install Extension</a>
+        </div>
+        <div class="card">
+          <img class="browser-logo" src="images/logo-firefox.svg" alt="logo-firefox">
+          <h3>Add to Firefox</h3>
+          <p>Minimum version 55</p>
+          <img class="dots-logo" src="images/bg-dots.svg" alt="bg-dots">
+          <a href="#" class="btn btn-blue">Add & Install Extension</a>
+        </div>
+        <div class="card">
+          <img class="browser-logo" src="images/logo-opera.svg" alt="logo-opera">
+          <h3>Add to Opera</h3>
+          <p>Minimum version 46</p>
+          <img class="dots-logo" src="images/bg-dots.svg" alt="bg-dots">
+          <a href="#" class="btn btn-blue">Add & Install Extension</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Frequently Asked Questions -->
+  <section class="asked-questions pd-y">
+    <div class="section-title">
+      <h2>Frequently Asked Questions</h2>
+      <p>
+        Here are some of our FAQs. If you have any other questions you’d like 
+        answered please feel free to email us.
+      </p>
+    </div>
+    <div class="container">
+      <div class="asked-questions-content">
+        <ul>
+          <li class="question question1" id="answer1">
+            <div class="question-title">What is Bookmark? <div class="icon-arrow open"></div></div>
+            <p class="answer answer1">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
+              justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+            </p>
+          </li>
+          <li class="question question2" id="answer2">
+            <div class="question-title">How can I request a new browser? <div class="icon-arrow open"></div></div>
+            
+            <p class="answer answer2">
+              Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
+              Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
+              ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
+              Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+            </p>
+          </li>
+          <li class="question question3" id="answer3">
+            <div class="question-title">Is there a mobile app? <div class="icon-arrow open"></div></div>
+            
+            <p class="answer answer3">
+              Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
+              ra mattis sit amet pharetra purus. Sed 
+              sollicitudin ex et ultricies bibendum.
+            </p>
+          </li>
+          <li class="question question4" id="answer4">
+            <div class="question-title">What about other Chromium browsers? <div class="icon-arrow open"></div></div>
+            
+            <p class="answer answer4">
+              Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
+              vitae neque eget nisl gravida pellentesque non ut velit.
+            </p>
+          </li>
+        </ul>
+        <a href="#" class="btn btn-blue">More Info</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="contact-us pd-y">
+      <div class="contact-us-content">
+        <span>35,000+ already joined</span>
+        <h2>Stay up-to-date with what we’re doing</h2>
+        <form>
+          <input class="email" type="email" placeholder="Enter your email address">
+          <button class="btn btn-red" type="submit">Contact Us</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-links">
+      <div class="container">
+        <div class="footer-links-content">
+          <ul class="footer-links-list">
+            <a href="index.html" class="logo-bookmark"></a>
+            <li><a href="#"> Features </a></li>
+            <li><a href="#"> Pricing </a></li>
+            <li><a href="#"> Contact </a></li>
+          </ul>
+          <ul class="footer-social-links">
+            <li><a href="#"><img src="images/icon-facebook.svg" alt="icon-facebook"></a></li>
+            <li><a href="#"><img src="images/icon-twitter.svg" alt="icon-twitter"></a></li>
+          </ul>
+        </div>
+      </div>
+      </div>
+  </footer>
   <!-- SCRIPTS -->
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/main.js"></script>
