@@ -120,7 +120,7 @@
         border: 2px solid var(--white);
     }
 
-    .nav-social-links {
+    .mobile-navbar .nav-social-links {
         position: absolute;
         bottom: 50px;
         left: 50%;
