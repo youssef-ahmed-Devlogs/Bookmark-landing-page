@@ -134,7 +134,6 @@
     /* Header */
     .header-content {
         flex-direction: column-reverse;
-        text-align: center;
     }
 
     .header-description h1,
